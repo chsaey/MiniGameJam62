@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 10;
+    float speed = 50f;
 
     // Update is called once per frame
     void Update()
     {
-        Object.Destroy(gameObject, 3.0f);
+        Object.Destroy(gameObject, 5.0f);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -19,8 +19,10 @@ public class Bullet : MonoBehaviour
     }
     private void FixedUpdate()
     {
-         //rockets?
+        //rockets?
         //gameObject.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(0, speed));
         gameObject.GetComponent<Rigidbody2D>().velocity = gameObject.transform.up * speed;
+       
+
     }
 }

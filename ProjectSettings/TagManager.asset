@@ -12,6 +12,7 @@ TagManager:
   - Rainbow
   - FireRate
   - Speed
+  - Border
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Pickups
   - Objects
   - Enemy
-  - 
+  - Border
   - 
   - 
   - 

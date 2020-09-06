@@ -136,7 +136,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 7194915860428629051}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e160de501f7d6aa4c9e7fa9e178eed41, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -156,13 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  kbSpeed: 2
-  minSpeed: 3
-  moveSpeed: 6
-  maxSpeed: 11
-  minScale: 0.5
-  maxScale: 10
-  fix: 1
+  knockback: 1
   explosion: {fileID: 2191930160842471248, guid: e2b1d9b573ad8594e89713aebbf1ba38, type: 3}
 --- !u!96 &1223223153
 TrailRenderer:
@@ -227,7 +221,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0.9811321, g: 0.58682805, b: 0.9031272, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}

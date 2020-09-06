@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 20f;
+    public float moveSpeed = 11f;
     public Rigidbody2D rb;
     public GameObject[] bullet;
     public int color = 0;
@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
 
-    float shotCoolDown = .1f;
+    float shotCoolDown = .01f;
     float currentTime = 0;
     int cd = 0;
 
@@ -99,21 +99,21 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Rainbow()
     {        // Start function WaitAndPrint as a coroutine
         rainbow = 1;
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(15);
         rainbow = 0;
         color = 0;
     }
     IEnumerator Speed()
     {        // Start function WaitAndPrint as a coroutine
-        moveSpeed = 40f;
-        yield return new WaitForSeconds(10);
-        moveSpeed = 20f;
+        moveSpeed = 25f;
+        yield return new WaitForSeconds(15);
+        moveSpeed = 11f;
     }
     IEnumerator FireRate()
     {        // Start function WaitAndPrint as a coroutine
         shotCoolDown = 0;
-        yield return new WaitForSeconds(10);
-        shotCoolDown = .1f;
+        yield return new WaitForSeconds(15);
+        shotCoolDown = .01f;
     }
 
 }
